@@ -24,34 +24,40 @@ Toxic-Content-Classifier/
 ```
 
 ## Project flow 
-+----------------------+
-|      User image      |
-+----------+-----------+
-           |
-           v
-+--------------------+
-| BLIP / BLIP2       |
-| Image Captioning   |
-+---------+----------+
-           |
-           v
-    Generated Caption
-           |
-           |
-User Text -+
-           |
-           v
-+-------------------------+
-| Toxic Text Classifier   |
-| (Llama Guard 3 / Ollama)|
-+-----------+-------------+
-           |
-           v
-   Hazard Category Prediction
-   (S1-S14, MLCommons taxonomy)
-           |
-           v
-     database.csv (CSV)
+
+                    ┌────────────────────────┐        ┌────────────────────────┐    
+                    │      User image        │        │       User Text        │
+                    └───────────┬────────────┘        └───────────┬────────────┘ 
+                                │                                 |
+                                ▼                                 |
+                    ┌────────────────────────┐                    |
+                    │          BLIP          │                    |
+                    │    Image Captioning    │                    |
+                    └───────────┬────────────┘                    |
+                                │                                 |
+                                ▼                                 |
+                    ┌────────────────────────┐                    |
+                    │   Generated Caption    │                    |
+                    └───────────┬────────────┘                    |
+                                │                                 |
+                                |                                 | 
+                                │                                 |
+                                ▼                                 |
+                ┌──────────────────────────────────┐              |
+                │      Toxic Text Classifier       |───────────────
+                │     (Llama Guard 3 / Ollama)     │
+                └────────────────┬─────────────────┘
+                                 │
+                                 ▼
+                ┌────────────────────────────────┐
+                │  Hazard Category Prediction      │
+                │   (S1–S14, MLCommons taxonomy)   │
+                └────────────────┬─────────────────┘
+                                 │
+                                 ▼
+                    ┌──────────────────────┐
+                    │  database.csv (CSV)  │
+                    └──────────────────────┘
      
 ## Requirements
 
