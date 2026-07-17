@@ -1,4 +1,4 @@
-# 🛡️ Toxic Content Classifier
+# Toxic Content Classifier
 
 A Streamlit app that classifies text and images for unsafe/toxic content using **Llama Guard 3** (via Ollama) and **BLIP** image captioning. Every submission and its classification result is logged to a CSV-backed database that can be browsed, filtered, and exported directly from the app.
 
