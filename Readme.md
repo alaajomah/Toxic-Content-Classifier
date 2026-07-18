@@ -15,9 +15,9 @@ A Streamlit app that classifies text and images for unsafe/toxic content using *
 ```
 Toxic-Content-Classifier/
 ├── app.py                    # Streamlit UI
-├── classifier.py             # sends text to the `llama-guard3:8b` model via [Ollama](https://ollama.com) and parses the `safe`/`unsafe` verdict plus hazard category codes.
+├── classifier.py             # sends text to the llama-guard3:8b model via Ollama and parses the safe/unsafe verdict plus hazard category codes.
 ├── imagecaption.py           # upload an image, generate a caption with BLIP
-├── database.py               # reads/writes classification results to `data/classifications.csv` using pandas.
+├── database.py               # reads/writes classification results to data/classifications.csv using pandas.
 ├── data/
 │   └── classifications.csv   # Logged submissions & results
 └── requirements.txt
