@@ -91,7 +91,6 @@ pip install -r requirements.txt
    - Upload an image and click **Caption & Classify Image**.
 5. Switch to the **View Database** tab to browse, filter, and download all past classifications.
    
-![Streamlit Demo](streamlit UI.png)
 <img width="1869" height="921" alt="streamlit UI" src="https://github.com/user-attachments/assets/c00a3f44-a382-491a-889a-d6d09f862164" />
 
 
