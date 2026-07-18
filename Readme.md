@@ -90,7 +90,8 @@ pip install -r requirements.txt
    - Enter text and click **Classify Text**, or
    - Upload an image and click **Caption & Classify Image**.
 5. Switch to the **View Database** tab to browse, filter, and download all past classifications.
-   ![Streamlit Demo](streamlit UI.png)
+   
+![Streamlit Demo](streamlit UI.png)
 
 
 ## Hazard categories
