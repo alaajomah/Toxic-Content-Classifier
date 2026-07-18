@@ -31,8 +31,8 @@ Toxic-Content-Classifier/
                                 │                                 |
                                 ▼                                 |
                     ┌────────────────────────┐                    |
-                    │          BLIP          │                    |
-                    │    Image Captioning    │                    |
+                    │     Image Captioning   │                    |
+                    │         BLIP 1         |                    |
                     └───────────┬────────────┘                    |
                                 │                                 |
                                 ▼                                 |
@@ -49,7 +49,7 @@ Toxic-Content-Classifier/
                 └────────────────┬─────────────────┘
                                  │
                                  ▼
-                ┌────────────────────────────────┐
+                ┌──────────────────────────────────┐
                 │  Hazard Category Prediction      │
                 │   (S1–S14, MLCommons taxonomy)   │
                 └────────────────┬─────────────────┘
